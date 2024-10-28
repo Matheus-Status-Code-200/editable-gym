@@ -1,0 +1,343 @@
+
+    :root {
+        --primary: #ff4d4d;
+        --secondary: #333;
+        --light: #f4f4f4;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+        line-height: 1.6;
+    }
+    
+    /* Navegação */
+    nav {
+        position: fixed;
+        width: 100%;
+        background: rgba(0,0,0,0.9);
+        padding: 1rem;
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        margin-right: 1rem;
+        color: var(--primary);
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .nav-links {
+        margin-right: 4%;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: var(--primary);
+    }
+    
+    .hero {
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48') center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        animation: fadeInUp 1s ease;
+    }
+    
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        animation: fadeInUp 1s ease 0.5s backwards;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: var(--primary);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: transform 0.3s;
+        animation: fadeInUp 1s ease 1s backwards;
+    }
+    
+    .btn:hover {
+        transform: translateY(-3px);
+    }
+    
+    .features {
+        padding: 5rem 2rem;
+        background: var(--light);
+    }
+    
+    .features-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .feature-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+    
+    /* Seção Planos */
+    .pricing {
+        padding: 5rem 2rem;
+        background: white;
+    }
+    
+    .pricing-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .pricing-card {
+        background: var(--light);
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+    
+    .pricing-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .price {
+        font-size: 3rem;
+        color: var(--primary);
+        margin: 1rem 0;
+    }
+    
+    /* Seção Instrutores */
+    .instructors {
+        padding: 5rem 2rem;
+        background: var(--light);
+    }
+    
+    .instructors-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+    
+    .instructor-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .instructor-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .instructor-info {
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .cta {
+        background: var(--primary);
+        color: white;
+        text-align: center;
+        padding: 5rem 2rem;
+    }
+    
+    /* Menu Mobile */
+    .menu-btn {
+        display: none;
+        cursor: pointer;
+    }
+    
+    @media (max-width: 768px) {
+        .menu-btn {
+            display: block;
+        }
+        
+        .nav-links {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(20, 20, 20, 0.9);
+            flex-direction: column;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .nav-links.active {
+            display: flex;
+            
+        }
+        .nav-container .edit-btn{
+            left: 90%;
+            background: rgba(235, 12, 12, 0.9);
+    }
+}
+    
+    /* Add to existing CSS */
+    .edit-btn {
+        position: absolute;
+        right: 10px;
+        background: rgba(0,0,0,0.7);
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s;
+    }
+    .edit-btn-nav{
+        position: absolute;
+        margin-left: 11rem;
+        background: rgba(202, 21, 21, 0.7);
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s;
+    }
+    
+    .edit-btn:hover {
+        background: rgba(0,0,0,0.9);
+    }
+    
+    .edit-btn svg, .edit-btn-nav svg{
+        width: 16px;
+        height: 16px;
+        fill: white;
+    }
+    
+    .feature-card, .pricing-card, .instructor-card, .hero {
+        position: relative;
+    }
+    
+    .edit-modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        z-index: 1100;
+        display: none;
+    }
+    
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1050;
+        display: none;
+    }
+    
+    .edit-modal input, .edit-modal select {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .edit-modal button {
+        padding: 8px 16px;
+        margin-top: 10px;
+        background: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .footer-email{margin-bottom: 1em;}
+    .footer-content .btn{    
+        display: inline-block;
+    padding: .5rem 1rem;
+    background: #333;
+    color: white;}

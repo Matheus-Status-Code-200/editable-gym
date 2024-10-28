@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>PowerFit2</title>
+    </head>
+    <body id="inicio" >
+        <body id="inicio" >
+            <nav>
+                <div  class="nav-container">
+                    <a href="https://websimfit.com/" class="logo">PowerFit</a>
+                    <button class="edit-btn-nav" onclick="openEditor('logo', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <div class="menu-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                        </svg>
+                    </div>
+                    <div class="nav-links">
+                        <a href="#sobre">Sobre</a>
+                    <button class="edit-btn" onclick="openEditorLinks('nav-link', event,'Sobre')">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <a href="#planos">Planos</a>
+                    <button class="edit-btn" onclick="openEditorLinks('nav-link', event, 'Planos')">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <a id="Instrutores"  href="#instrutores">Instrutores</a>
+                    <button  class="edit-btn" onclick="openEditorLinks('nav-link', event, 'Instrutores')">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <a href="#inicio">Contato</a>
+                    <button class="edit-btn" onclick="openEditorLinks('nav-link', event, ['Contatos','Instrutores'])">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </nav>
+    
+        <section class="hero">
+            <div class="hero-content">
+                <button class="edit-btn" onclick="openEditor('hero-content', event)">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                </button>
+                <h1>PowerFit Academy</h1>
+                <p>Transforme seu corpo, mente e vida com nossos programas personalizados</p>
+                <a href="https://websimfit.com/cadastro" class="btn">Comece Hoje</a>
+            </div>
+        </section>
+    
+        <section id="sobre" class="features">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <button class="edit-btn" onclick="openEditor('feature', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="var(--primary)">
+                        <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/>
+                    </svg>
+                    <h3>Equipamentos Modernos</h3>
+                    <p>Academia equipada com as últimas tecnologias em fitness</p>
+                </div>
+                <div class="feature-card">
+                    <button class="edit-btn" onclick="openEditor('feature', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="var(--primary)">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+                    </svg>
+                    <h3>Profissionais Qualificados</h3>
+                    <p>Equipe de instrutores certificados e experientes</p>
+                </div>
+                <div class="feature-card">
+                    <button class="edit-btn" onclick="openEditor('feature', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="var(--primary)">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                    </svg>
+                    <h3>Aulas Variadas</h3>
+                    <p>Musculação, CrossFit, Yoga, Pilates e muito mais</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos" class="pricing">
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <button class="edit-btn" onclick="openEditor('pricing', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <h3>Plano Básico</h3>
+                    <div class="price">R$89,90</div>
+                    <ul>
+                        <li>Acesso à musculação</li>
+                        <li>Horário comercial</li>
+                        <li>Avaliação física mensal</li>
+                    </ul>
+                    <a href="https://websimfit.com/assinar/basico" class="btn">Assinar</a>
+                </div>
+                <div class="pricing-card">
+                    <button class="edit-btn" onclick="openEditor('pricing', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <h3>Plano Premium</h3>
+                    <div class="price">R$149,90</div>
+                    <ul>
+                        <li>Acesso total às instalações</li>
+                        <li>Todas as aulas inclusas</li>
+                        <li>Acesso 24h</li>
+                        <li>Avaliação física quinzenal</li>
+                    </ul>
+                    <a href="https://websimfit.com/assinar/premium" class="btn">Assinar</a>
+                </div>
+                <div class="pricing-card">
+                    <button class="edit-btn" onclick="openEditor('pricing', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <h3>Plano Família</h3>
+                    <div class="price">R$249,90</div>
+                    <ul>
+                        <li>Até 3 pessoas</li>
+                        <li>Todos os benefícios Premium</li>
+                        <li>Personal Trainer dedicado</li>
+                    </ul>
+                    <a href="https://websimfit.com/assinar/familia" class="btn">Assinar</a>
+                </div>
+            </div>
+        </section>
+
+        <section  class="instructors">
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <button class="edit-btn" onclick="openEditor('instructor', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b" alt="Instrutor de musculação profissional" class="instructor-img">
+                    <div class="instructor-info">
+                        <h3>João Silva</h3>
+                        <p>Especialista em Musculação</p>
+                    </div>
+                </div>
+                <div class="instructor-card">
+                    <button class="edit-btn" onclick="openEditor('instructor', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Instrutora de yoga em pose meditativa" class="instructor-img">
+                    <div class="instructor-info">
+                        <h3>Maria Santos</h3>
+                        <p>Instrutora de Yoga</p>
+                    </div>
+                </div>
+                <div class="instructor-card">
+                    <button class="edit-btn" onclick="openEditor('instructor', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61" alt="Instrutor de CrossFit em ação" class="instructor-img">
+                    <div class="instructor-info">
+                        <h3>Pedro Costa</h3>
+                        <p>Coach de CrossFit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <footer class="footer">
+                <div class="footer-content">
+                    <h2>Entre em Contato</h2>
+                    <p>CNPJ: 12.345.678/0001-90</p>
+                    <p>Endereço: Rua Exemplo, 123 - Centro, Cidade - Estado</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <p class="footer-email">Email: contato@powerfit.com</p>
+                    <a href="https://websimfit.com/promocao" class="btn">Aproveitar Oferta</a>
+                    <button class="edit-btn" onclick="openEditor('footer', event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                </div>
+            </footer>
+        </section>
+
+        <div class="modal-overlay"></div>
+        <div class="edit-modal">
+            <h3>Editar Elemento</h3>
+            <div id="edit-form"></div>
+        </div>
+
+        <script src="./index.js">        </script>
+    </body>
+    </html>
